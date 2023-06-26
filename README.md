@@ -30,7 +30,7 @@ This README file serves as a reference manual for the J-CANSAT project. It provi
    - Overview of CanSat and its applications
    - Purpose and objectives of the manual
 
-2. [System Requirements](#System_Requirements)
+2. [System Requirements](#system-requirements)
    - Compatible hardware platform
    - Software required for CanSat programming and configuration
 
@@ -97,7 +97,7 @@ We hope this manual helps you make the most of your J-CANSAT experience and fost
 Let's get started!
 
 ## System Requirements
-[//]: # (System_Requirements)
+#system-requirements
 
 Before getting started with your J-CANSAT project, please ensure that you have the following system requirements:
 
