@@ -167,13 +167,18 @@ Carefully mount the Mirai Innovation boards inside the CanSat casing. Ensure pro
 ### Step 3: Connect the Sensors and Modules
 
 Connect the sensors and modules to their respective ports on the Mirai Innovation boards. Follow the pinout diagrams or instructions provided with the kit to make the correct connections.
-Module1.\\
+#### Module 1.\
 
 View 1.
 ![image](https://github.com/mirai-innovation/JCansat/assets/38308445/e790255b-5c78-44f2-83d2-a5bfdc8de2ad)
 View 2.
 ![image](https://github.com/mirai-innovation/JCansat/assets/38308445/e96d3f5a-8b1b-4850-b695-46d501dac048)
 
+#### Module 2.\
+View 1. 
+![image](https://github.com/mirai-innovation/JCansat/assets/38308445/77cf4c36-224e-4d5e-b7ae-cee081ea7b26)
+View 2.
+![image](https://github.com/mirai-innovation/JCansat/assets/38308445/2de3cef8-dcd9-4071-88c5-48cd77f86c66)
 
 ### Step 4: Secure the Wiring
 
