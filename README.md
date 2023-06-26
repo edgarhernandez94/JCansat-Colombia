@@ -26,7 +26,7 @@ This README file serves as a reference manual for the J-CANSAT project. It provi
 
 ## Manual Contents
 
-1. Introduction [CanSat](#Introduction)
+1.  [Introduction](#Introduction)
    - Overview of CanSat and its applications
    - Purpose and objectives of the manual
 
