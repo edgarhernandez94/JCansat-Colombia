@@ -149,19 +149,19 @@ Before starting the assembly, gather all the components required for the CanSat.
 Carefully mount the Mirai Innovation boards inside the CanSat casing. Ensure proper alignment and secure them in place using the provided mounting brackets or adhesive.
 ![image](https://github.com/mirai-innovation/JCansat/assets/38308445/d9c0e8a7-9b9e-44af-a6cd-f99d72bde2ae)
 
-|          | PCB1                                | PCB2                                      | PCB3                                 |
-|----------|------------------------------------|------------------------------------------|-------------------------------------|
-|Components   | Two double 32-pin header strips     | 10k Resistors                             | Five 8-pin headers                   |
-|          | 5mm LED                            | Four long 8-pin header pins               | 2-pin push button                    |
-|          | 220-330 ohm resistor               | 2-pin JST connector                       | 6-pin header                         |
-|          | 7-pin header                        | Female JST connector with cable           | 220 ohm resistor                     |
-|          | 4-pin header                        | Switch                                   | SD module                            |
-|          | Two long 8-pin header pins          | 4-pin header                              | Camera module                        |
-|          | 2-pin JST connector                 | Two 2-pin male headers                    | Temperature module                   |
-|          | Female JST connector with wires     | Two 1-pin male headers                    | CO2 module                           |
-|          | GPS module                          | Charging module                           |                                     |
-|          | Radiofrequency module               | Boost module                              |                                     |
-|          | Arduino Mega Micro                  | IMU module                                |                                     |
+| Module 1                                | Module 2                                      | Module 3                 |               
+|------------------------------------|------------------------------------------|-------------------------------------|
+| Two double 32-pin header strips     | 10k Resistors                             | Five 8-pin headers                   |
+| 5mm LED                            | Four long 8-pin header pins               | 2-pin push button                    |
+| 220-330 ohm resistor               | 2-pin JST connector                       | 6-pin header                         |
+| 7-pin header                        | Female JST connector with cable           | 220 ohm resistor                     |
+| 4-pin header                        | Switch                                   | SD module                            |
+| Two long 8-pin header pins          | 4-pin header                              | Camera module                        |
+| 2-pin JST connector                 | Two 2-pin male headers                    | Temperature module                   |
+| Female JST connector with wires     | Two 1-pin male headers                    | CO2 module                           |
+| GPS module                          | Charging module                           |                                     |
+| Radiofrequency module               | Boost module                              |                                     |
+| Arduino Mega Micro                  | IMU module                                |                                     |
 
 
 ### Step 3: Connect the Sensors and Modules
