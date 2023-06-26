@@ -147,21 +147,21 @@ Before starting the assembly, gather all the components required for the CanSat.
 ### Step 2: Mount the Mirai Innovation Boards
 
 Carefully mount the Mirai Innovation boards inside the CanSat casing. Ensure proper alignment and secure them in place using the provided mounting brackets or adhesive.
-![image](https://github.com/mirai-innovation/JCansat/assets/38308445/12bab578-93fe-4c34-a5ba-59e805b9074f)
+![image](https://github.com/mirai-innovation/JCansat/assets/38308445/d9c0e8a7-9b9e-44af-a6cd-f99d72bde2ae)
 
-Component	Description
-PCB1	Printed Circuit Board 1
-Two double 32-pin headers	Two strips of double 32-pin headers
-5mm LED	5mm LED
-220-330 ohm resistor	220-330 ohm resistor
-7-pin header	7-pin header
-4-pin header	4-pin header
-Two long 8-pin header pins	Two long 8-pin header pins
-2-pin JST connector	2-pin JST connector
-Female JST connector with wires	Female JST connector with wires
-GPS module	GPS module
-RF (Radio Frequency) module	Radio Frequency (RF) module
-Arduino Mega Micro	Arduino Mega Micro
+|          | PCB1                                | PCB2                                      | PCB3                                 |
+|----------|------------------------------------|------------------------------------------|-------------------------------------|
+|Components   | Two double 32-pin header strips     | 10k Resistors                             | Five 8-pin headers                   |
+|          | 5mm LED                            | Four long 8-pin header pins               | 2-pin push button                    |
+|          | 220-330 ohm resistor               | 2-pin JST connector                       | 6-pin header                         |
+|          | 7-pin header                        | Female JST connector with cable           | 220 ohm resistor                     |
+|          | 4-pin header                        | Switch                                   | SD module                            |
+|          | Two long 8-pin header pins          | 4-pin header                              | Camera module                        |
+|          | 2-pin JST connector                 | Two 2-pin male headers                    | Temperature module                   |
+|          | Female JST connector with wires     | Two 1-pin male headers                    | CO2 module                           |
+|          | GPS module                          | Charging module                           |                                     |
+|          | Radiofrequency module               | Boost module                              |                                     |
+|          | Arduino Mega Micro                  | IMU module                                |                                     |
 
 
 ### Step 3: Connect the Sensors and Modules
