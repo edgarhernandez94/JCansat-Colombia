@@ -26,7 +26,7 @@ This README file serves as a reference manual for the J-CANSAT project. It provi
 
 ## Manual Contents
 
-1. Introduction
+1. Introduction [CanSat](#Introduction)
    - Overview of CanSat and its applications
    - Purpose and objectives of the manual
 
@@ -59,3 +59,40 @@ This README file serves as a reference manual for the J-CANSAT project. It provi
 
 9. Additional Resources
    - Links to technical documentation, tutorials, and useful external resources
+
+## Introduction
+
+Welcome to the J-CANSAT manual! This section provides an overview of CanSat and its applications, as well as the purpose and objectives of this manual.
+
+### Overview of CanSat
+
+CanSat is a miniature satellite that fits inside a standard-sized soda can. It is designed to perform various scientific missions and experiments, mimicking the functionality of a real satellite. CanSats are used in educational settings to provide hands-on experience in aerospace engineering, data collection, and analysis.
+
+### Applications of CanSat
+
+CanSats have a wide range of applications across various fields, including:
+
+- Weather forecasting and atmospheric studies
+- Environmental monitoring and pollution analysis
+- Remote sensing and imaging
+- Communications and signal analysis
+- Educational projects and competitions
+
+By building and operating a CanSat, you can gain practical knowledge and skills in satellite development, data analysis, and mission planning.
+
+### Purpose and Objectives of the Manual
+
+The purpose of this manual is to guide you through the process of setting up, assembling, programming, and operating your J-CANSAT. It serves as a comprehensive reference, providing step-by-step instructions, code examples, and troubleshooting tips.
+
+The objectives of this manual are:
+
+1. To provide a clear understanding of the CanSat concept and its applications.
+2. To assist you in successfully assembling and programming your J-CANSAT.
+3. To enable you to conduct meaningful scientific missions and collect data.
+4. To offer guidance in analyzing and interpreting the collected data.
+5. To inspire further exploration and experimentation in the field of aerospace engineering.
+
+We hope this manual helps you make the most of your J-CANSAT experience and fosters your interest in satellite development and scientific research.
+
+Let's get started!
+
