@@ -97,6 +97,7 @@ We hope this manual helps you make the most of your J-CANSAT experience and fost
 Let's get started!
 
 ## System Requirements
+[//]: # (System_Requirements)
 
 Before getting started with your J-CANSAT project, please ensure that you have the following system requirements:
 
