@@ -129,6 +129,43 @@ Make sure to install the latest versions of the required software and drivers to
 
 Once you have completed the initial setup, you are ready to move on to the next steps, such as assembly, programming, and configuration of the CanSat.
 
+## CanSat Assembly
+
+This section provides step-by-step instructions for the physical assembly of the CanSat. Follow these instructions carefully to ensure a successful assembly process.
+
+### Step 1: Gather the Components
+
+Before starting the assembly, gather all the components required for the CanSat. These may include:
+
+- CanSat main body (soda can design or rocket design). Depends of the version.
+- Mirai Innovation boards (sensor and communication modules). X1 J-CANSAT NEW MISSION KIT and X1 J-CANSAT THE FUTURE IS NOW KIT
+- Sensors (IMU, GPS, altitude sensor, atmospheric pressure). Depends of the version
+- Other modules (vision module, camera, SD card, air quality sensor) X1 J-CANSAT THE FUTURE IS NOW KIT
+- Wires and connectors
+![components](https://github.com/mirai-innovation/JCansat/assets/38308445/c5cc2388-358e-4936-949e-23fef8c19712)
+
+### Step 2: Mount the Mirai Innovation Boards
+
+Carefully mount the Mirai Innovation boards inside the CanSat casing. Ensure proper alignment and secure them in place using the provided mounting brackets or adhesive.
+
+### Step 3: Connect the Sensors and Modules
+
+Connect the sensors and modules to their respective ports on the Mirai Innovation boards. Follow the pinout diagrams or instructions provided with the kit to make the correct connections.
+
+### Step 4: Secure the Wiring
+
+Once all the components are connected, carefully secure the wiring inside the CanSat casing to prevent any loose connections or interference. Use zip ties or tape to organize and secure the wires.
+
+### Step 5: Double-Check the Connections
+
+Before closing the CanSat casing, double-check all the connections to ensure they are properly secured and aligned. This will help prevent any potential issues during operation.
+
+### Step 6: Close the CanSat Casing
+
+If you are using a custom casing, follow the specific instructions provided with the casing to close and seal it properly. For a soda can, ensure that the can is tightly sealed and the components are protected.
+
+Congratulations! You have successfully assembled your CanSat. The next step is to proceed with the programming and configuration process to make it ready for operation.
+
 
 
 
