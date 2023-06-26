@@ -46,18 +46,18 @@ This README file serves as a reference manual for the J-CANSAT project. It provi
    - Description of compatible programming languages
    - Code examples and step-by-step programming guide
 
-6. Sensor and Module Configuration
+6. [Sensor and Module Configuration](#sensor-and-module-configuration)
    - Instructions for configuring and calibrating the sensors included in the kit
    - Integration of communication and data storage modules
 
-7. Usage and Operation
+8. Usage and Operation
    - Instructions for CanSat usage before, during, and after the mission
    - Data collection and analysis
 
-8. Troubleshooting
+9. Troubleshooting
    - List of common issues and possible solutions
 
-9. Additional Resources
+10. Additional Resources
    - Links to technical documentation, tutorials, and useful external resources
 
 ## Introduction
@@ -167,20 +167,20 @@ Carefully mount the Mirai Innovation boards inside the CanSat casing. Ensure pro
 ### Step 3: Connect the Sensors and Modules
 
 Connect the sensors and modules to their respective ports on the Mirai Innovation boards. Follow the pinout diagrams or instructions provided with the kit to make the correct connections.
-#### Module 1.\
+#### Module 1.
 
 View 1.
 ![image](https://github.com/mirai-innovation/JCansat/assets/38308445/e790255b-5c78-44f2-83d2-a5bfdc8de2ad)
 View 2.
 ![image](https://github.com/mirai-innovation/JCansat/assets/38308445/e96d3f5a-8b1b-4850-b695-46d501dac048)
 
-#### Module 2.\
+#### Module 2.
 View 1. 
 ![image](https://github.com/mirai-innovation/JCansat/assets/38308445/77cf4c36-224e-4d5e-b7ae-cee081ea7b26)
 View 2.
 ![image](https://github.com/mirai-innovation/JCansat/assets/38308445/2de3cef8-dcd9-4071-88c5-48cd77f86c66)
 
-### Step 4: Secure the Wiring
+<!--- (### Step 4: Secure the Wiring
 
 Once all the components are connected, carefully secure the wiring inside the CanSat casing to prevent any loose connections or interference. Use zip ties or tape to organize and secure the wires.
 
@@ -192,7 +192,35 @@ Before closing the CanSat casing, double-check all the connections to ensure the
 
 If you are using a custom casing, follow the specific instructions provided with the casing to close and seal it properly. For a soda can, ensure that the can is tightly sealed and the components are protected.
 
-Congratulations! You have successfully assembled your CanSat. The next step is to proceed with the programming and configuration process to make it ready for operation.
+Congratulations! You have successfully assembled your CanSat. The next step is to proceed with the programming and configuration process to make it ready for operation.-->
+
+
+## 5. CanSat Programming
+
+This section provides information on programming the CanSat and includes code examples and a step-by-step programming guide.
+
+### Description of Compatible Programming Languages
+
+The CanSat can be programmed using various programming languages depending on the microcontroller or development board being used. Some of the commonly used languages for CanSat programming include:
+
+- Arduino programming language (based on C/C++)
+- Python
+- MicroPython
+- Java
+- C/C++
+- JavaScript
+- and more
+
+Choose a programming language that you are familiar with or interested in learning. Each language has its own advantages and resources available to support CanSat development.
+
+### Code Examples and Step-by-Step Programming Guide
+
+To help you get started with programming the CanSat, we provide code examples and a step-by-step programming guide. The code examples demonstrate various functionalities and features of the CanSat, such as data collection, sensor integration, communication protocols, and more. The step-by-step programming guide walks you through the process of setting up the development environment, writing code, and uploading it to the CanSat.
+
+Refer to the [CanSat Programming](#cansat-programming) directory in this repository for the code examples and programming guide. Follow the instructions carefully to understand and customize the code according to your project requirements.
+
+Remember to review the comments and documentation within the code examples, as they provide explanations and guidance on how to modify and expand the functionality to suit your specific needs.
+
 
 
 
