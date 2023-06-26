@@ -42,7 +42,7 @@ This README file serves as a reference manual for the J-CANSAT project. It provi
    - Step-by-step instructions for physical assembly of the CanSat
    - Connections and wiring between components
 
-5. CanSat Programming
+5. [CanSat Programming](#cansat-programming)
    - Description of compatible programming languages
    - Code examples and step-by-step programming guide
 
@@ -167,6 +167,12 @@ Carefully mount the Mirai Innovation boards inside the CanSat casing. Ensure pro
 ### Step 3: Connect the Sensors and Modules
 
 Connect the sensors and modules to their respective ports on the Mirai Innovation boards. Follow the pinout diagrams or instructions provided with the kit to make the correct connections.
+Module1.
+View 1.
+![image](https://github.com/mirai-innovation/JCansat/assets/38308445/e790255b-5c78-44f2-83d2-a5bfdc8de2ad)
+View 2.
+![image](https://github.com/mirai-innovation/JCansat/assets/38308445/e96d3f5a-8b1b-4850-b695-46d501dac048)
+
 
 ### Step 4: Secure the Wiring
 
