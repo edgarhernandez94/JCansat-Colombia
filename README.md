@@ -34,7 +34,7 @@ This README file serves as a reference manual for the J-CANSAT project. It provi
    - Compatible hardware platform
    - Software required for CanSat programming and configuration
 
-3. Initial Setup
+3. [Initial Setup](#Setup)
    - Installation of the development environment
    - Configuration of necessary tools and libraries
 
@@ -104,11 +104,33 @@ Before getting started with your J-CANSAT project, please ensure that you have t
 
 In addition to the hardware platform, you will need the following software for CanSat programming and configuration:
 
-- Windows 10 or higher: We already test in Windows 10 and 11
-- Arduino IDE: https://www.arduino.cc/
-- J-Cansat GUI: (included in the repo)
-- CH340 driver: (included in the repo)
-Make sure to install the latest versions of the required software to ensure compatibility and access to the latest features and bug fixes.
+- Windows 10 or higher.
+- Arduino IDE
+- J-Cansat GUI
+- CH340 driver
+
+## Initial Setup
+
+To begin working with the J-CANSAT project, you will need to perform the initial setup, including the installation of the development environment and the configuration of necessary tools and libraries. Follow the steps below to get started:
+
+### Installation of the Development Environment
+
+1. **Windows 10 or higher:** Ensure that you have a compatible Windows operating system. The J-CANSAT project has been tested on both Windows 10 and Windows 11.
+
+2. **Arduino IDE:** Install the Arduino IDE, which is the integrated development environment used for programming the CanSat. You can download the latest version of the Arduino IDE from the official website: [Arduino IDE](https://www.arduino.cc/)
+
+### Configuration of Necessary Tools and Libraries
+
+1. **J-Cansat GUI:** The J-CANSAT project includes a graphical user interface (GUI) that provides a user-friendly interface for configuring and controlling the CanSat. The GUI files are included in the repository. To set up the GUI, follow the instructions provided in the documentation or README file.
+
+2. **CH340 driver:** If you are using a CH340 USB-to-serial adapter for connecting the CanSat to your computer, you will need to install the CH340 driver. The driver files are included in the repository. Refer to the documentation or README file for instructions on installing the CH340 driver.
+
+Make sure to install the latest versions of the required software and drivers to ensure compatibility and access to the latest features and bug fixes.
+
+Once you have completed the initial setup, you are ready to move on to the next steps, such as assembly, programming, and configuration of the CanSat.
+
+
+
 
 
 
