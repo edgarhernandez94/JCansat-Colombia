@@ -30,7 +30,7 @@ This README file serves as a reference manual for the J-CANSAT project. It provi
    - Overview of CanSat and its applications
    - Purpose and objectives of the manual
 
-2. System Requirements
+2. [System Requirements](#Requirements)
    - Compatible hardware platform
    - Software required for CanSat programming and configuration
 
@@ -95,4 +95,20 @@ The objectives of this manual are:
 We hope this manual helps you make the most of your J-CANSAT experience and fosters your interest in satellite development and scientific research.
 
 Let's get started!
+
+## System Requirements
+
+Before getting started with your J-CANSAT project, please ensure that you have the following system requirements:
+
+### Software Requirements
+
+In addition to the hardware platform, you will need the following software for CanSat programming and configuration:
+
+- Windows 10 or higher: We already test in Windows 10 and 11
+- Arduino IDE: https://www.arduino.cc/
+- J-Cansat GUI: (included in the repo)
+- CH340 driver: (included in the repo)
+Make sure to install the latest versions of the required software to ensure compatibility and access to the latest features and bug fixes.
+
+
 
