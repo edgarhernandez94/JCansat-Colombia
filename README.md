@@ -34,7 +34,7 @@ This README file serves as a reference manual for the J-CANSAT project. It provi
    - Compatible hardware platform
    - Software required for CanSat programming and configuration
 
-3. [Initial Setup](#Initial_Setup)
+3. [Initial Setup](#initial-setup)
    - Installation of the development environment
    - Configuration of necessary tools and libraries
 
@@ -97,7 +97,6 @@ We hope this manual helps you make the most of your J-CANSAT experience and fost
 Let's get started!
 
 ## System Requirements
-#system-requirements
 
 Before getting started with your J-CANSAT project, please ensure that you have the following system requirements:
 
