@@ -204,14 +204,7 @@ This section provides information on programming the CanSat and includes code ex
 The CanSat can be programmed using various programming languages depending on the microcontroller or development board being used. Some of the commonly used languages for CanSat programming include:
 
 - Arduino programming language (based on C/C++)
-- Python
-- MicroPython
-- Java
-- C/C++
-- JavaScript
-- and more
 
-Choose a programming language that you are familiar with or interested in learning. Each language has its own advantages and resources available to support CanSat development.
 
 ### Code Examples and Step-by-Step Programming Guide
 
