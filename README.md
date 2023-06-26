@@ -38,7 +38,7 @@ This README file serves as a reference manual for the J-CANSAT project. It provi
    - Installation of the development environment
    - Configuration of necessary tools and libraries
 
-4. CanSat Assembly
+4. [CanSat Assembly](#cansat-assembly)
    - Step-by-step instructions for physical assembly of the CanSat
    - Connections and wiring between components
 
