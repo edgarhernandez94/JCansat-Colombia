@@ -147,6 +147,8 @@ Before starting the assembly, gather all the components required for the CanSat.
 ### Step 2: Mount the Mirai Innovation Boards
 
 Carefully mount the Mirai Innovation boards inside the CanSat casing. Ensure proper alignment and secure them in place using the provided mounting brackets or adhesive.
+![image](https://github.com/mirai-innovation/JCansat/assets/38308445/e08bd98a-8213-4083-8f4c-c21aa574ef7b)
+
 
 ### Step 3: Connect the Sensors and Modules
 
