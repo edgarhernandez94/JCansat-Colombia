@@ -212,10 +212,35 @@ To help you get started with programming the CanSat, we provide code examples an
 
 Refer to the [CanSat Programming](#cansat-programming) directory in this repository for the code examples and programming guide. Follow the instructions carefully to understand and customize the code according to your project requirements.
 
-Remember to review the comments and documentation within the code examples, as they provide explanations and guidance on how to modify and expand the functionality to suit your specific needs.
+Remember to review the comments and documentation within the code examples, as they provide explanations and guidance on how to modify and expand the functionality to suit your specific needs.\
 
+## Uploading Arduino Code to Arduino Mega
 
+Follow these steps to upload the "cansat.ino" code to your Arduino Mega using the Arduino IDE:
 
+1. **Install Arduino IDE**: Download and install the Arduino IDE from the official Arduino website (https://www.arduino.cc/en/software).
+
+2. **Connect the Arduino Mega**: Use a USB cable to connect your Arduino Mega to your computer.
+
+3. **Open Arduino IDE**: Launch the Arduino IDE.
+
+4. **Select the Board**: In the Arduino IDE, go to **Tools** > **Board** and select "Arduino Mega" or "Arduino Mega 2560".
+
+5. **Select the Port**: While still in the **Tools** menu, go to **Port** and choose the appropriate COM port for your Arduino Mega.
+
+6. **Open the Sketch**: Click on **File** > **Open** and locate the "cansat.ino" file on your computer. Open it in the Arduino IDE.
+
+7. **Verify and Compile**: Click the checkmark icon or go to **Sketch** > **Verify/Compile** to compile the sketch and check for any errors.
+
+8. **Upload the Sketch**: Click the right arrow icon or go to **Sketch** > **Upload** to upload the code to your Arduino Mega.
+
+9. **Upload Complete**: Once the upload process is complete, you should see a "Done uploading" message in the status bar.
+
+10. **Verify the Operation**: Observe the behavior of your Arduino Mega to ensure the code is running correctly.
+
+That's it! Your Arduino code (cansat.ino) is now uploaded and running on your Arduino Mega.
+
+Remember to double-check the connections and power supply to ensure proper functionality of your Arduino Mega.
 
 
 
