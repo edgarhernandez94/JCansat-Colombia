@@ -46,11 +46,11 @@ This README file serves as a reference manual for the J-CANSAT project. It provi
    - Description of compatible programming languages
    - Code examples and step-by-step programming guide
 
-6. [Sensor and Module Configuration](#sensor-and)
+6. [Sensor and Module Configuration](#sensor-and-module-configuration)
    - Instructions for configuring and calibrating the sensors included in the kit
    - Integration of communication and data storage modules
 
-8. Usage and Operation
+7. [Usage and Operation](#usage-and-operation)
    - Instructions for CanSat usage before, during, and after the mission
    - Data collection and analysis
 
@@ -242,6 +242,67 @@ That's it! Your Arduino code (cansat.ino) is now uploaded and running on your Ar
 
 Remember to double-check the connections and power supply to ensure proper functionality of your Arduino Mega.
 
+## 6. Sensor and Module Configuration
+
+This section provides instructions for configuring and calibrating the sensors included in the kit, as well as integrating the communication and data storage modules.
+
+### Instructions for Configuring and Calibrating Sensors
+
+To ensure accurate and reliable data collection, it is important to properly configure and calibrate the sensors included in the kit. Follow these instructions to configure and calibrate the sensors:
+
+1. **IMU (Inertial Measurement Unit)**: Connect the IMU sensor to the appropriate pins on the Mirai PCB board. Refer to the provided documentation or pinout diagram for the correct connections. Install any necessary libraries or drivers for the IMU sensor. Configure the sensor settings, such as sampling rate, measurement range, and filtering options, according to your project requirements. Perform sensor calibration if needed, following the instructions provided by the sensor manufacturer.
+
+2. **GPS (Global Positioning System)**: Connect the GPS module to the Mirai PCB board as instructed. Ensure that the GPS antenna has a clear view of the sky for optimal signal reception. Install any required libraries or drivers for the GPS module. Configure the GPS module settings, such as baud rate and update frequency, as per your project needs. Allow sufficient time for the GPS module to acquire satellite signals and obtain accurate positioning information.
+
+3. **Altitude Sensor**: Connect the altitude sensor to the designated pins on the Mirai PCB board. Check the sensor datasheet or documentation for the correct pin configuration. Calibrate the altitude sensor according to the provided instructions. This calibration process usually involves setting the reference altitude or adjusting an offset value to account for local atmospheric conditions.
+
+4. **Atmospheric Pressure Sensor**: Connect the atmospheric pressure sensor to the appropriate pins on the Mirai PCB board. Ensure that the sensor is correctly wired as specified in the documentation. Install any necessary libraries or drivers for the atmospheric pressure sensor. Calibrate the sensor using a known reference pressure value or follow the calibration procedure provided by the sensor manufacturer.
+
+### Integration of Communication and Data Storage Modules
+
+The kit includes communication and data storage modules that enable you to transmit and store data collected by the CanSat. Follow these steps to integrate the communication and data storage modules:
+
+1. **RF (Radio Frequency) Module**: Connect the RF module to the Mirai PCB board according to the pinout instructions. Install any required libraries or drivers for the RF module. Configure the module settings, such as operating frequency and modulation type, based on your project requirements. Implement the necessary protocols and functions to establish communication between the CanSat and ground station.
+
+2. **SD Card Module**: Connect the SD card module to the designated pins on the Mirai PCB board. Ensure that the module is properly connected and oriented. Install any necessary libraries or drivers for the SD card module. Implement the appropriate functions in your code to read and write data to the SD card. Consider file naming conventions and data organization for efficient data storage and retrieval.
+
+Ensure that all connections are secure and properly insulated to avoid any interference or data corruption during operation. Test the sensor and module functionality before the actual deployment of the CanSat.
+
+Refer to the documentation provided with the kit for more detailed instructions on configuring, calibrating, and integrating the sensors and modules. Make sure to follow the recommended best practices and guidelines to ensure accurate data collection and reliable performance of your CanSat.
+
+## 8. Usage and Operation
+
+This section provides instructions for using the CanSat before, during, and after the mission, as well as guidelines for data collection and analysis.
+
+### Instructions for CanSat Usage
+
+Follow these instructions for using the CanSat before, during, and after the mission:
+
+1. **Pre-Mission Preparation**: Before the mission, ensure that the CanSat is fully assembled according to the provided instructions. Double-check all connections and make sure the battery is charged. Review the mission objectives and requirements to ensure proper configuration and settings.
+
+2. **Mission Deployment**: During the mission, carefully position and secure the CanSat inside the launch vehicle or carrier. Ensure that the CanSat is oriented correctly for optimal data collection. Follow all safety protocols and guidelines during the launch or deployment process.
+
+3. **Data Collection**: The CanSat is equipped with various sensors to collect data during the mission. Monitor the data collection process and ensure that all sensors are functioning properly. Take note of any anomalies or unexpected readings.
+
+4. **Data Storage**: The collected data can be stored either onboard the CanSat using the data storage module or transmitted in real-time to a ground station using the communication module. Ensure that the storage or transmission process is uninterrupted and reliable.
+
+5. **Post-Mission Analysis**: After the mission, retrieve the CanSat and carefully examine it for any damage. Download the collected data from the CanSat's storage module or ground station. Analyze the data to gain insights and draw conclusions based on the mission objectives. Compare the collected data with the expected outcomes or predicted values.
+
+### Data Collection and Analysis
+
+To effectively collect and analyze the data from the CanSat, consider the following guidelines:
+
+1. **Data Logging**: Ensure that the data logging process is initiated and functioning correctly. Monitor the data storage capacity and make sure it does not exceed the limits of the storage module or SD card.
+
+2. **Data Retrieval**: Use the appropriate methods to retrieve the collected data from the CanSat's storage module or ground station. Transfer the data to a computer or storage device for further analysis.
+
+3. **Data Analysis**: Apply suitable data analysis techniques and tools to process and interpret the collected data. Utilize statistical methods, visualization tools, or custom algorithms to extract meaningful insights from the data. Consider the mission objectives and the specific parameters being measured.
+
+4. **Result Evaluation**: Compare the collected data with the expected outcomes or predicted values. Evaluate the accuracy and reliability of the measurements. Identify any discrepancies or anomalies that may require further investigation.
+
+5. **Mission Report**: Prepare a mission report summarizing the data collection process, analysis results, and conclusions. Include any recommendations or improvements for future missions based on the findings.
+
+Remember to follow all safety guidelines and legal requirements during the usage and operation of the CanSat. Document all procedures and observations for future reference and knowledge sharing.
 
 
 
