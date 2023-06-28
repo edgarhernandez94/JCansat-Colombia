@@ -270,7 +270,7 @@ Ensure that all connections are secure and properly insulated to avoid any inter
 
 Refer to the documentation provided with the kit for more detailed instructions on configuring, calibrating, and integrating the sensors and modules. Make sure to follow the recommended best practices and guidelines to ensure accurate data collection and reliable performance of your CanSat.
 
-## 8. Usage and Operation
+## 7. Usage and Operation
 
 This section provides instructions for using the CanSat before, during, and after the mission, as well as guidelines for data collection and analysis.
 
@@ -304,5 +304,32 @@ To effectively collect and analyze the data from the CanSat, consider the follow
 
 Remember to follow all safety guidelines and legal requirements during the usage and operation of the CanSat. Document all procedures and observations for future reference and knowledge sharing.
 
+## 8. Troubleshooting
+
+This section provides a list of common issues that you may encounter while using the CanSat and possible solutions to resolve them.
+
+### Common Issues and Solutions
+
+1. **Power-related Issues**:
+   - **Issue**: The CanSat does not power on or shuts down unexpectedly.
+   - **Solution**: Check the battery connection and ensure it is securely attached. Verify that the battery is charged or replace it with a fully charged one if needed. Double-check the power switch position and make sure it is in the "ON" position.
+
+2. **Sensor Readings Inconsistent or Unreliable**:
+   - **Issue**: The sensor readings are inconsistent, fluctuating, or inaccurate.
+   - **Solution**: Check the sensor connections and ensure they are properly attached. Verify that the sensor wiring is correct and matches the pin configuration. Calibrate the sensors as per the provided instructions or consult the sensor manufacturer's documentation. Ensure that the sensors are not affected by external interference or environmental factors.
+
+3. **Communication Issues**:
+   - **Issue**: The CanSat is unable to establish a connection or transmit data to the ground station.
+   - **Solution**: Confirm that the communication module is properly connected and configured. Check the wiring and connections between the CanSat and the ground station. Ensure that the communication frequencies and protocols are set correctly. Test the communication module with known working devices or components to isolate the issue.
+
+4. **Data Storage Problems**:
+   - **Issue**: The CanSat fails to store data or encounters errors during the data storage process.
+   - **Solution**: Verify the proper connection and configuration of the data storage module. Ensure that the storage medium, such as an SD card, is properly inserted and formatted. Check for any limitations or restrictions on the storage capacity. Test the data storage functionality with a small amount of data to confirm its proper operation.
+
+5. **Software Errors or Code Issues**:
+   - **Issue**: The CanSat behaves unexpectedly or does not execute the desired functions.
+   - **Solution**: Review the code for any syntax errors, logic flaws, or compatibility issues. Check the libraries and dependencies for compatibility with the specific hardware and software versions. Debug the code by adding debug statements or utilizing the Serial Monitor for troubleshooting. Consult online forums, documentation, or community resources for code-related issues.
+
+If you encounter an issue that is not listed above or if the provided solutions do not resolve the problem, consider seeking assistance from the kit's manufacturer or consulting the available support channels. Document any troubleshooting steps and findings for future reference.
 
 
