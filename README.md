@@ -46,7 +46,7 @@ This README file serves as a reference manual for the J-CANSAT project. It provi
    - Description of compatible programming languages
    - Code examples and step-by-step programming guide
 
-6. [Sensor and Module Configuration](#sensor-and-module-configuration)
+6. [Sensor and Module Configuration](#sensor-and)
    - Instructions for configuring and calibrating the sensors included in the kit
    - Integration of communication and data storage modules
 
