@@ -54,7 +54,7 @@ This README file serves as a reference manual for the J-CANSAT project. It provi
    - Instructions for CanSat usage before, during, and after the mission
    - Data collection and analysis
 
-9. Troubleshooting
+9. [Troubleshooting](#troubleshooting)
    - List of common issues and possible solutions
 
 10. Additional Resources
@@ -331,5 +331,35 @@ This section provides a list of common issues that you may encounter while using
    - **Solution**: Review the code for any syntax errors, logic flaws, or compatibility issues. Check the libraries and dependencies for compatibility with the specific hardware and software versions. Debug the code by adding debug statements or utilizing the Serial Monitor for troubleshooting. Consult online forums, documentation, or community resources for code-related issues.
 
 If you encounter an issue that is not listed above or if the provided solutions do not resolve the problem, consider seeking assistance from the kit's manufacturer or consulting the available support channels. Document any troubleshooting steps and findings for future reference.
+
+## 9. Additional Resources
+
+This section provides a list of additional resources that can be helpful for further understanding and working with the CanSat kit.
+
+### Technical Documentation
+
+- [CanSat Kit User Manual](link-to-user-manual): Refer to the official user manual provided with the CanSat kit for detailed instructions on assembly, configuration, and usage.
+
+- [Sensor Datasheets](link-to-sensor-datasheets): Access the datasheets for the sensors included in the kit to understand their specifications, pin configurations, and recommended usage guidelines.
+
+### Tutorials and Guides
+
+- [CanSat Assembly Tutorial](link-to-assembly-tutorial): Follow a step-by-step tutorial that demonstrates the assembly process of the CanSat, including the placement of components and wiring connections.
+
+- [Programming Guide for CanSat](link-to-programming-guide): Explore a comprehensive guide that covers various programming aspects of the CanSat, including code examples, libraries, and troubleshooting tips.
+
+### Online Communities and Forums
+
+- [CanSat Forum](link-to-cansat-forum): Engage with a community of CanSat enthusiasts, where you can share your experiences, ask questions, and exchange knowledge with other users.
+
+- [Arduino Forum](link-to-arduino-forum): Join the Arduino community forum to seek advice, discuss programming challenges, and connect with Arduino enthusiasts.
+
+### Video Tutorials
+
+- [CanSat Kit Assembly Video](link-to-assembly-video): https://www.youtube.com/watch?v=6z1HlNjEK00&ab_channel=MiraiInnovation Watch a detailed video tutorial that guides you through the assembly process of the CanSat, providing visual instructions and tips along the way.
+
+- [CanSat Programming Tutorial](link-to-programming-tutorial): Access a video tutorial series that walks you through the programming aspects of the CanSat, covering code examples and demonstrations.
+
+These resources should provide valuable guidance and support as you explore and work with the CanSat kit. Make sure to refer to the official documentation and seek assistance from the kit's manufacturer or online communities if you have specific questions or challenges.
 
 
