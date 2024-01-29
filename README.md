@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://pbs.twimg.com/profile_images/1356640339180707841/lFpJ-GjN_400x400.jpg"/>
+</p>
+
 # J-CANSAT
 
 J-CANSAT is an educational project that combines the concept of CanSat (a miniature satellite) with innovative technology. This repository contains the code and resources related to the J-CANSAT project.
