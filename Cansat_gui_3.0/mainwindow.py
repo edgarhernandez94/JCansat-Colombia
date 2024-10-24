@@ -9,6 +9,7 @@ from tkinter import ttk  # Importación para Combobox
 import serial.tools.list_ports  # Importación para listar puertos COM
 import threading
 import queue
+import random  # Importación para generar datos aleatorios
 
 # -------------------------------------------------------------------------------
 # Funciones auxiliares
@@ -23,11 +24,12 @@ def cerrar(event):
     root.destroy()
 
 def crear_figura():
-    # Crear una figura de matplotlib usando bajo nivel
-    fig = mpl_fig.Figure(figsize=(4, 3), dpi=80)  # Tamaño reducido
+    # Crear una figura de matplotlib usando bajo nivel con un tamaño más pequeño
+    fig = mpl_fig.Figure(figsize=(4, 3), dpi=100)  # Reducir el tamaño de la figura
     fig.patch.set_alpha(0)  # Establecer la transparencia del fondo de la figura
-    ax = fig.add_axes([0, 0, 1, 1])  # Establecer facecolor a 'none' para fondo transparente
+    ax = fig.add_axes([0.1, 0.1, 0.8, 0.8])  # Ajustar el tamaño del área del gráfico
     return fig, ax
+
 
 def listar_puertos():
     return [port.device for port in serial.tools.list_ports.comports()]
@@ -65,8 +67,8 @@ def conectar():
         thread.start()
         
         # Actualizar la posición del mapa después de conectar
-        latitud = 19.16018
-        longitud = -100.13440
+        latitud = 4.636356
+        longitud = -74.06477
         map_widget.set_position(latitud, longitud)
         map_widget.set_zoom(12)
         
@@ -103,7 +105,7 @@ def leer_puerto_serie():
                     queue_grafica3.put(data3)
 
                     # Actualizar el label de Pressure (dato 10)
-                    root.after(0, lambda val=datos[9]: label_dato_10.config(text=f"{val}"))
+                    root.after(0, lambda val=datos[9]: label_dato_10.config(text=f"{val}"+"C"))
                     # Actualizar el label de temperatura (dato 11)
                     root.after(0, lambda val=datos[10]: label_dato_11.config(text=f"{val}"))
                     # Actualizar el label de altitude (dato 12)
@@ -122,6 +124,42 @@ def leer_puerto_serie():
                     #print(datos)
         except Exception as e:
             print(f"Error al recibir datos: {e}")
+# -------------------------------------------------------------------------------
+# Función para simular la recepción de datos
+# -------------------------------------------------------------------------------
+def iniciar_simulacion():
+    global modo_simulacion
+    modo_simulacion = True
+    # Cambiar el texto del botón de simulación a "Detener Simulación" y configurar su comando a detener_simulacion()
+    btn_simulacion.config(text="Detener Simulación", command=detener_simulacion)
+    # Iniciar la generación de datos simulados
+    simular_datos()
+
+def detener_simulacion():
+    global modo_simulacion
+    modo_simulacion = False
+    # Cambiar el texto del botón de simulación a "Iniciar Simulación" y configurar su comando a iniciar_simulacion()
+    btn_simulacion.config(text="Iniciar Simulación", command=iniciar_simulacion)
+
+def simular_datos():
+    if modo_simulacion:
+        # Generar datos simulados para las tres gráficas
+        data1 = [random.uniform(-1, 1), random.uniform(-1, 1), random.uniform(-1, 1)]
+        data2 = [random.uniform(-10, 10), random.uniform(-10, 10), random.uniform(-10, 10)]
+        data3 = [random.uniform(-180, 180), random.uniform(-180, 180), random.uniform(-180, 180)]
+        
+        queue_grafica1.put(data1)
+        queue_grafica2.put(data2)
+        queue_grafica3.put(data3)
+        
+        # También puedes simular otros valores que actualizan los labels
+        root.after(0, lambda val=random.uniform(20, 30): label_dato_11.config(text=f"{val:.2f}°C"))
+        root.after(0, lambda val=random.uniform(900, 1100): label_dato_10.config(text=f"{val:.2f} hPa"))
+        root.after(0, lambda val=random.uniform(0, 1000): label_dato_12.config(text=f"{val:.2f} m"))
+        root.after(0, lambda val=random.uniform(0, 100): label_dato_15.config(text=f"{val:.2f}%"))
+        
+        # Programar la siguiente simulación después de 100 ms
+        root.after(200, simular_datos)
 
 def update_grafica1():
     if not queue_grafica1.empty():
@@ -155,7 +193,7 @@ def update_grafica1():
         grafica_label1.config(image=grafica_photo)
         grafica_label1.image = grafica_photo
     
-    root.after(100, update_grafica1)
+    root.after(200, update_grafica1)
 
 def update_grafica2():
     if not queue_grafica2.empty():
@@ -189,7 +227,7 @@ def update_grafica2():
         grafica_label2.config(image=grafica_photo)
         grafica_label2.image = grafica_photo
     
-    root.after(100, update_grafica2)
+    root.after(200, update_grafica2)
 
 
 def update_grafica3():
@@ -224,7 +262,7 @@ def update_grafica3():
         grafica_label3.config(image=grafica_photo)
         grafica_label3.image = grafica_photo
     
-    root.after(100, update_grafica3)
+    root.after(200, update_grafica3)
 
 # -------------------------------------------------------------------------------
 # Configuración inicial de la ventana principal
@@ -247,6 +285,8 @@ zdata3 = []
 queue_grafica1 = queue.Queue()
 queue_grafica2 = queue.Queue()
 queue_grafica3 = queue.Queue()
+# Estado de la simulación
+modo_simulacion = False
 
 # Establecer el tamaño de pantalla completa
 root.attributes('-fullscreen', True)
@@ -315,6 +355,10 @@ btn_actualizar.place(x=1760, y=200, width=100, height=30)
 btn_conectar = ttk.Button(root, text="Conectar", style='TButton', command=conectar)
 btn_conectar.place(x=1760, y=240, width=100, height=30)
 
+# Crear el botón para iniciar la simulación
+btn_simulacion = ttk.Button(root, text="Iniciar Simulación", style='TButton', command=iniciar_simulacion)
+btn_simulacion.place(x=1560, y=240, width=150, height=30)
+
 # Inicializar la lista de puertos COM
 actualizar_puertos()
 
@@ -332,8 +376,8 @@ map_widget = TkinterMapView(root, width=ancho_widget, height=alto_widget, corner
 map_widget.place(x=posicion_x, y=posicion_y)
 
 # Establecer una posición inicial para el mapa en Osaka
-latitud_inicial = 34.69374
-longitud_inicial = 135.50218
+latitud_inicial = 4.645919
+longitud_inicial = -74.058679
 map_widget.set_position(latitud_inicial, longitud_inicial)
 map_widget.set_zoom(10)
 
@@ -375,6 +419,33 @@ titulo_grafica2.place(x=pos_x_grafica2, y=pos_y_grafica2 - 30, width=width_grafi
 titulo_grafica3 = tk.Label(root, text="Gyroscope", font=("Helvetica", 14, "bold"), bg="#0078d7", fg="white", bd=2, relief="solid", padx=5, pady=5)
 titulo_grafica3.place(x=pos_x_grafica3, y=pos_y_grafica3 - 30, width=width_grafica3, height=30)
 
+# Crear el Label para mostrar la Temperatura
+pos_x_temp, pos_y_temp, width_temp, height_temp = ajustar_a_resolucion(
+    245, 750, 300, 50, resolucion_4k, resolucion_actual
+)
+label_dato_11 = tk.Label(root, text="", font=("Helvetica", 24, "bold"), bg="#ffffff")
+label_dato_11.place(x=pos_x_temp, y=pos_y_temp, width=width_temp, height=height_temp)
+
+# Crear el Label para mostrar el Pressure
+pos_x_press, pos_y_press, width_press, height_press = ajustar_a_resolucion(
+    245, 1080, 300, 50, resolucion_4k, resolucion_actual
+)
+label_dato_10 = tk.Label(root, text="", font=("Helvetica", 20, "bold"), bg="#ffffff")
+label_dato_10.place(x=pos_x_press, y=pos_y_press, width=width_press, height=height_press)
+
+# Crear el Label para mostrar la Altitud
+pos_x_alt, pos_y_alt, width_alt, height_alt = ajustar_a_resolucion(
+    245, 1410, 300, 50, resolucion_4k, resolucion_actual
+)
+label_dato_12 = tk.Label(root, text="", font=("Helvetica", 24, "bold"), bg="#ffffff")
+label_dato_12.place(x=pos_x_alt, y=pos_y_alt, width=width_alt, height=height_alt)
+
+# Crear el Label para mostrar el Battery
+pos_x_batt, pos_y_batt, width_batt, height_batt = ajustar_a_resolucion(
+    245, 1720, 300, 50, resolucion_4k, resolucion_actual
+)
+label_dato_15 = tk.Label(root, text="", font=("Helvetica", 24, "bold"), bg="#ffffff")
+label_dato_15.place(x=pos_x_batt, y=pos_y_batt, width=width_batt, height=height_batt)
 
 
 # -------------------------------------------------------------------------------
