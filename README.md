@@ -4,29 +4,27 @@
 
 # J-CANSAT
 
-El **J-CANSAT** es un proyecto educativo que combina el concepto de CanSat (un satélite en miniatura) con tecnología innovadora. Este repositorio contiene el código y los recursos relacionados con el proyecto J-CANSAT.
+El **J-CANSAT** es un proyecto educativo que combina el concepto de CanSat (un satélite en miniatura) con tecnología innovadora. Este repositorio está diseñado como un recurso práctico para estudiantes y entusiastas que participan en cursos o workshops sobre el armado y la operación de un CanSat con forma de cohete. Aquí encontrarás el código y los recursos relacionados con el proyecto J-CANSAT, incluyendo herramientas visuales para una experiencia interactiva.
 
-## Descripción
+El J-CANSAT busca proporcionar una experiencia **práctica** y **didáctica** en la construcción y operación de un CanSat, un dispositivo del tamaño de una lata de refresco que imita el funcionamiento de un satélite real. Integra componentes como placas PCB, sensores, módulos de comunicación y almacenamiento de datos, permitiendo la simulación de misiones satelitales con la recopilación y transmisión de datos en tiempo real.
 
-El objetivo del proyecto J-CANSAT es proporcionar a los estudiantes y entusiastas una experiencia práctica en el desarrollo y operación de un CanSat. Un CanSat es un dispositivo del tamaño de una lata de refresco que integra varios componentes, como placas PCB, sensores, módulos de comunicación y almacenamiento de datos. Permite la realización de misiones simuladas de satélite, recopilando y transmitiendo datos en tiempo real.
+Este repositorio incluye:
+- **Código fuente** para programar y controlar el CanSat.
+- **Documentación técnica** y **manuales de usuario** para entender cada parte del sistema.
+- **Herramientas interactivas**, como una interfaz gráfica (GUI) y realidad aumentada (AR) para visualizar el CanSat en tu celular.
 
-Este repositorio incluye el código fuente necesario para programar y controlar el CanSat, así como archivos de diseño para la impresión 3D del chasis del CanSat. Además, proporciona documentación técnica, manuales de usuario y otros recursos útiles para que los usuarios puedan comprender y utilizar eficazmente el CanSat.
+Además, durante el curso o workshop, los estudiantes desarrollarán habilidades en las siguientes áreas:
+1. **Programación de microcontroladores** para controlar el CanSat.
+2. **Integración de sensores y comunicación satelital** mediante la conexión de módulos de sensores, cámara y antena.
+3. **Operación de sistemas satelitales simulados** para misiones de monitoreo ambiental, análisis atmosférico, y más.
 
-## Características
-
-- Código fuente para la programación del CanSat
-- Archivos de diseño para la impresión 3D del chasis del CanSat
-- Documentación técnica y manuales de usuario
-- Recursos adicionales como bibliotecas y archivos de configuración
-
-## Requisitos
-
-- Plataforma de hardware compatible (especificar la plataforma requerida)
-- Software de programación y configuración (especificar el software requerido)
+---
 
 # Manual del J-CANSAT
 
-Este archivo README sirve como manual de referencia para el proyecto J-CANSAT. Proporciona instrucciones detalladas sobre la configuración, ensamblaje, programación y uso del CanSat.
+Este README sirve como manual de referencia para el proyecto J-CANSAT. Aquí aprenderás todo lo necesario para configurar, ensamblar, programar y usar tu CanSat. Este manual está diseñado para acompañar un curso o workshop, con teoría disponible en las presentaciones complementarias. 
+
+Si deseas revisar la teoría completa, consulta [este enlace de presentaciones](https://github.com/edgarhernandez94/JCansat-Colombia/tree/main).
 
 ## Contenidos del Manual
 
@@ -34,144 +32,229 @@ Este archivo README sirve como manual de referencia para el proyecto J-CANSAT. P
    - Visión general del CanSat y sus aplicaciones
    - Propósito y objetivos del manual
 2. [Requisitos del Sistema](#requisitos-del-sistema)
-   - Plataforma de hardware compatible
-   - Software requerido para la programación y configuración del CanSat
+   - Hardware y software necesario
 3. [Configuración Inicial](#configuración-inicial)
    - Instalación del entorno de desarrollo
    - Configuración de herramientas y bibliotecas necesarias
 4. [Ensamblaje del CanSat](#ensamblaje-del-cansat)
-   - Instrucciones paso a paso para el ensamblaje físico del CanSat
-   - Conexiones y cableado entre los componentes
+   - Instrucciones paso a paso para ensamblar el CanSat
+   - Conexiones y cableado
 5. [Programación del CanSat](#programación-del-cansat)
-   - Descripción de los lenguajes de programación compatibles
-   - Ejemplos de código y guía de programación paso a paso
+   - Explicación del código y cómo cargarlo en el CanSat
 6. [Configuración de Sensores y Módulos](#configuración-de-sensores-y-módulos)
-   - Instrucciones para configurar y calibrar los sensores del kit
-   - Integración de módulos de comunicación y almacenamiento de datos
+   - Cómo calibrar los sensores y configurar los módulos
 7. [Uso y Operación](#uso-y-operación)
-   - Instrucciones para el uso del CanSat antes, durante y después de la misión
+   - Uso del CanSat antes, durante y después de la misión
    - Recolección y análisis de datos
 8. [Resolución de Problemas](#resolución-de-problemas)
-   - Lista de problemas comunes y posibles soluciones
+   - Solución a problemas comunes
 9. [Recursos Adicionales](#recursos-adicionales)
-   - Enlaces a documentación técnica, tutoriales y otros recursos útiles
+   - Enlaces a tutoriales, documentación y herramientas útiles
+
+---
 
 ## Introducción
 
-¡Bienvenido al manual del J-CANSAT! Esta sección proporciona una visión general del CanSat y sus aplicaciones, así como el propósito y los objetivos de este manual.
+¡Bienvenido al manual del J-CANSAT! Esta sección ofrece una introducción completa al proyecto, explicando los conceptos básicos del CanSat, sus aplicaciones y cómo este manual te ayudará en tu aprendizaje práctico.
 
 ### Visión General del CanSat
 
-Un CanSat es un satélite en miniatura que cabe dentro de una lata de refresco de tamaño estándar. Está diseñado para realizar varias misiones científicas y experimentos, imitando la funcionalidad de un satélite real. Los CanSats se utilizan en entornos educativos para proporcionar experiencia práctica en ingeniería aeroespacial, recolección y análisis de datos.
+El **J-CANSAT** es un satélite en miniatura con forma de cohete, diseñado para caber dentro de una estructura compacta. Aunque pequeño, está equipado para realizar misiones científicas simuladas, recolectar datos ambientales y transmitirlos en tiempo real. El J-CANSAT es una herramienta educativa perfecta para aprender sobre ingeniería aeroespacial, electrónica y programación.
 
 ### Aplicaciones del CanSat
 
-Los CanSats tienen una amplia gama de aplicaciones en varios campos, incluyendo:
-
-- Pronóstico del tiempo y estudios atmosféricos
-- Monitoreo ambiental y análisis de contaminación
-- Sensores remotos e imágenes
-- Análisis de señales y comunicaciones
-- Proyectos educativos y competiciones
-
-Al construir y operar un CanSat, puedes adquirir conocimientos y habilidades prácticas en desarrollo de satélites, análisis de datos y planificación de misiones.
+Las aplicaciones del CanSat abarcan varias áreas, como:
+- Estudios atmosféricos y pronóstico del tiempo.
+- Monitoreo ambiental y análisis de contaminación.
+- Sensores remotos e imágenes.
+- Proyectos educativos y competencias.
 
 ### Propósito y Objetivos del Manual
 
-El propósito de este manual es guiarte a través del proceso de configuración, ensamblaje, programación y operación de tu J-CANSAT. Sirve como referencia completa, proporcionando instrucciones paso a paso, ejemplos de código y consejos para la resolución de problemas.
+Este manual está diseñado para ser parte de un **curso o workshop**, proporcionando pasos claros y detallados para guiarte en la construcción y programación del CanSat. Los principales objetivos son:
 
-Los objetivos de este manual son:
+1. Enseñarte cómo ensamblar y programar el J-CANSAT.
+2. Guiarte en el uso de herramientas interactivas como la GUI y la AR.
+3. Acompañar tu aprendizaje con ejemplos prácticos y teoría en las presentaciones proporcionadas. Además, tendrás acceso a contenido educativo complementario del J-CANSAT a través de [este enlace](https://drive.google.com/drive/folders/1GNC4Jz8p9KHgKdK73it8v78G0GBuc7wd?usp=sharing).
 
-1. Proporcionar una comprensión clara del concepto de CanSat y sus aplicaciones.
-2. Ayudarte a ensamblar y programar con éxito tu J-CANSAT.
-3. Permitir la realización de misiones científicas significativas y la recolección de datos.
-4. Ofrecer orientación para el análisis e interpretación de los datos recolectados.
-5. Inspirar la exploración y experimentación en el campo de la ingeniería aeroespacial.
+### Flujo de trabajo del curso
+
+El flujo de trabajo del curso incluye los siguientes pasos clave:
+1. **Instalación del software**: Incluye la configuración del Arduino IDE y la GUI para controlar el CanSat.
+2. **Ensamblaje del sistema**: Aunque las placas PCB ya vienen prearmadas, los estudiantes aprenderán a ensamblar el sistema conectando las placas de manera correcta, orientando el sistema, y conectando tanto la antena como la cámara a sus respectivas ubicaciones.
+3. **Programación y prueba**: Los estudiantes programarán el CanSat y lo probarán utilizando la GUI, monitoreando los datos transmitidos en tiempo real.
+4. **Visualización y análisis de datos**: Se utilizarán herramientas como la GUI y AR para visualizar el CanSat y analizar los datos recolectados durante las misiones simuladas.
+
 
 ## Requisitos del Sistema
 
-Antes de comenzar con tu proyecto J-CANSAT, asegúrate de cumplir con los siguientes requisitos del sistema:
+Para trabajar con el J-CANSAT, asegúrate de contar con lo siguiente:
+
+### Requisitos de Hardware
+- Placas PCB del CanSat (según el kit).
+- Sensores (IMU, GPS, presión atmosférica).
+- Otros módulos: cámara, módulo de RF, etc.
+
+#### Componentes detallados:
+
+| Componente                              | Descripción                                  |
+|------------------------------------------|----------------------------------------------|
+| Dos tiras de encabezado de 32 pines      | Conectores para las placas                   |
+| Resistencia de 10k                       | Resistencia utilizada en la placa            |
+| Cinco encabezados de 8 pines             | Para conexiones entre sensores               |
+| LED de 5 mm                              | Indicador de estado                         |
+| Resistencia de 220-330 ohm               | Para el LED                                  |
+| Botón de presión de 2 pines              | Botón para encender/apagar                   |
+| Conector JST de 2 pines                  | Para conexiones de alimentación              |
+| Módulo GPS                               | Sensor GPS para seguimiento                  |
+| Módulo de radiofrecuencia                | Para transmisión de datos                    |
+| Módulo de carga                          | Para cargar el CanSat                        |
+| Arduino Mega Micro                       | Controlador principal del CanSat             |
+| Módulo de cámara                         | Cámara para capturar imágenes                |
+| Módulo IMU                               | Unidad de medición inercial                  |
+| Módulo de temperatura                    | Sensor de temperatura                       |
+
+### Placas PCB y Componentes
+
+1. **Vista 1: Placa 1**
+   ![image](https://github.com/mirai-innovation/JCansat/assets/38308445/e790255b-5c78-44f2-83d2-a5bfdc8de2ad)
+   
+2. **Vista 2: Placa 1**
+   ![image](https://github.com/mirai-innovation/JCansat/assets/38308445/e96d3f5a-8b1b-4850-b695-46d501dac048)
+
+3. **Vista 1: Placa 2**
+   ![image](https://github.com/mirai-innovation/JCansat/assets/38308445/77cf4c36-224e-4d5e-b7ae-cee081ea7b26)
+   
+4. **Vista 2: Placa 2**
+   ![image](https://github.com/mirai-innovation/JCansat/assets/38308445/2de3cef8-dcd9-4071-88c5-48cd77f86c66)
 
 ### Requisitos de Software
 
-Además de la plataforma de hardware, necesitarás el siguiente software para la programación y configuración del CanSat:
+Además del hardware, necesitarás el siguiente software:
 
-- Windows 10 o superior
-- Arduino IDE
-- J-Cansat GUI
-- Controlador CH340
+- **Arduino IDE**: Para programar el CanSat.
+- **J-Cansat GUI**: Interfaz gráfica para controlar el CanSat (ubicada en `cansat_gui_3.0`).
+- **Controlador CH340**: Para la conexión USB entre el CanSat y la computadora (incluido en la carpeta `Cansat_arduino`).
+- **Visor de AR**: Abre directamente el archivo en Android o iOS desde la carpeta `Cansat_AR` para visualizar el modelo en realidad aumentada.
+
+
 
 ## Configuración Inicial
 
-Para comenzar a trabajar con el proyecto J-CANSAT, deberás realizar la configuración inicial, incluyendo la instalación del entorno de desarrollo y la configuración de las herramientas y bibliotecas necesarias. Sigue los pasos a continuación para empezar:
-
 ### Instalación del Entorno de Desarrollo
 
-1. **Windows 10 o superior:** Asegúrate de contar con un sistema operativo Windows compatible. El proyecto J-CANSAT ha sido probado en Windows 10 y Windows 11.
+1. **Instalación de Python**:
+   - Para ejecutar la GUI del CanSat, necesitarás instalar **Python** en tu computadora. Descarga la última versión de Python desde el sitio oficial: [Python Downloads](https://www.python.org/downloads/).
+   - Durante la instalación, asegúrate de marcar la opción **"Add Python to PATH"** para que Python esté disponible desde la línea de comandos.
+   
+  
+2. **Instalación de las dependencias de Python**:
+   - Dentro de la carpeta `cansat_gui_3.0`, encontrarás el archivo `requirements.txt`, que contiene las bibliotecas necesarias para ejecutar la interfaz gráfica (GUI).
+   - Para instalar todas las dependencias, abre la terminal o línea de comandos y navega hasta la carpeta `cansat_gui_3.0`. Luego ejecuta el siguiente comando:
+     ```bash
+     pip install -r requirements.txt
+     ```
+   - Este comando instalará todas las bibliotecas listadas en el archivo, como `Tkinter`, `matplotlib` y otras necesarias para la GUI.
+  
 
-2. **Arduino IDE:** Instala el Arduino IDE, que es el entorno de desarrollo integrado utilizado para programar el CanSat. Puedes descargar la última versión del Arduino IDE desde el sitio web oficial: [Arduino IDE](https://www.arduino.cc/)
+3. **Arduino IDE**: 
+   - Descarga e instala el [Arduino IDE](https://www.arduino.cc/en/software).
+   - Abre el IDE y asegúrate de seleccionar la versión correcta de la placa **Arduino Mega** en el menú de "Herramientas" > "Placa" > "Arduino Mega o Mega 2560".
+   - Si es la primera vez que usas el Arduino IDE, sigue el proceso de instalación estándar que incluye configurar los drivers de las placas.
 
-### Configuración de Herramientas y Bibliotecas Necesarias
+4. **J-Cansat GUI**:
+   - Navega a la carpeta `cansat_gui_3.0` dentro del repositorio.
+   - Después de instalar las dependencias con `pip`, puedes ejecutar la GUI abriendo el archivo Python correspondiente (`main.py`).
+   - La GUI te permitirá visualizar y controlar los datos que el CanSat recoja en tiempo real.
 
-1. **J-Cansat GUI:** El proyecto J-CANSAT incluye una interfaz gráfica de usuario (GUI) que proporciona una interfaz amigable para configurar y controlar el CanSat. Los archivos GUI están incluidos en el repositorio. Sigue las instrucciones proporcionadas en la documentación o el archivo README para configurar la GUI.
+5. **Controlador CH340**:
+   - El controlador **CH340** es necesario para la comunicación entre el CanSat y tu computadora. Los archivos del controlador están incluidos en la carpeta `Cansat_arduino`.
+   - Sigue las instrucciones para instalar el controlador en tu sistema operativo (Windows o Mac). Asegúrate de reiniciar tu computadora después de la instalación.
 
-2. **Controlador CH340:** Si utilizas un adaptador USB a serial CH340 para conectar el CanSat a tu computadora, necesitarás instalar el controlador CH340. Los archivos del controlador están incluidos en el repositorio. Consulta la documentación o el archivo README para obtener instrucciones sobre la instalación del controlador CH340.
+---
 
-Una vez que hayas completado la configuración inicial, estarás listo para pasar a los siguientes pasos, como el ensamblaje, la programación y la configuración del CanSat.
+### Configuración de Herramientas Interactivas
+
+1. **Realidad Aumentada (AR)**:
+   - Para visualizar el CanSat en realidad aumentada, abre el archivo de la carpeta `Cansat_AR` directamente en tu dispositivo Android o iOS. No necesitas una aplicación adicional, ya que los archivos están optimizados para abrirse directamente desde el sistema operativo.
+   - Al abrir el archivo, podrás visualizar un modelo en 3D del CanSat en tu dispositivo, lo que te permitirá inspeccionar el diseño y la estructura desde diferentes ángulos.
+
+2. **Consejo adicional**:
+   - Si experimentas problemas con la visualización en AR, verifica que tienes suficiente espacio en la memoria del dispositivo y asegúrate de tener la última actualización del sistema operativo Android o iOS.
+
+---
+
+
+
 
 ## Ensamblaje del CanSat
 
-Esta sección proporciona instrucciones paso a paso para el ensamblaje físico del CanSat. Sigue estas instrucciones cuidadosamente para asegurar un proceso de ensamblaje exitoso.
+Esta sección te guiará en el ensamblaje del CanSat, desde la recolección de componentes hasta la conexión de sensores y módulos.
 
 ### Paso 1: Reúne los Componentes
 
-Antes de comenzar el ensamblaje, reúne todos los componentes necesarios para el CanSat. Estos pueden incluir:
+Antes de empezar, asegúrate de tener todos los componentes del kit:
+- Cuerpo del CanSat (puedes imprimir el chasis con los archivos 3D disponibles).
+- Placas PCB.
+- Sensores y módulos.
 
-- Cuerpo principal del CanSat (diseño de lata de refresco o diseño de cohete, dependiendo de la versión)
-- Placas de Mirai Innovation (sensores y módulos de comunicación)
-- Sensores (IMU, GPS, sensor de altitud, presión atmosférica)
-- Otros módulos (módulo de visión, cámara, tarjeta SD, sensor de calidad del aire)
-- Cables y conectores
+### Paso 2: Montaje
 
-### Paso 2: Montaje de las Placas de Mirai Innovation
+1. **Montaje de Placas:** Inserta las placas en el chasis siguiendo el esquema incluido en la documentación técnica.
+2. **Conexión de Sensores:** Conecta cada sensor y módulo a las placas utilizando los diagramas de conexión proporcionados.
 
-Monta cuidadosamente las placas de Mirai Innovation dentro del chasis del CanSat. Asegúrate de que estén alineadas correctamente y fíjalas en su lugar utilizando los soportes o adhesivos proporcionados.
+### Paso 3: Verificación de Conexiones
 
-### Paso 3: Conexión de los Sensores y Módulos
-
-Conecta los sensores y módulos a los puertos correspondientes en las placas de Mirai Innovation. Sigue los diagramas de conexión o las instrucciones incluidas en el kit para realizar las conexiones correctas.
+Antes de cerrar el chasis, asegúrate de revisar todas las conexiones para evitar problemas durante la operación.
 
 ## Programación del CanSat
 
-Esta sección proporciona información sobre la programación del CanSat e incluye ejemplos de código y una guía paso a paso de programación.
+### Explicación del Código
 
-### Descripción de Lenguajes de Programación Compatibles
+El CanSat se programa en Arduino. El código fuente se encuentra en la carpeta `Cansat_arduino`. Abre los archivos `.ino` en el Arduino IDE, personaliza los parámetros según tu misión y sigue los siguientes pasos para cargar el código:
 
-El CanSat se puede programar utilizando varios lenguajes de programación, dependiendo del microcontrolador o la placa de desarrollo que se utilice. Algunos de los lenguajes más utilizados para la programación de CanSat incluyen:
+1. Conecta el CanSat a tu computadora mediante el cable USB.
+2. Abre el Arduino IDE y selecciona la placa correcta.
+3. Carga el código en el CanSat.
 
-- Lenguaje de programación de Arduino (basado en C/C++)
+### Subir Código Arduino
 
-### Ejemplos de Código y Guía de Programación Paso a Paso
-
-Para ayudarte a comenzar con la programación del CanSat, proporcionamos ejemplos de código y una guía paso a paso. Los ejemplos de código demuestran diversas funcionalidades y características del CanSat, como la recolección de datos, la integración de sensores, los protocolos de comunicación y más.
-
-Consulta el directorio de [Programación del CanSat](#programación-del-cansat) en este repositorio para acceder a los ejemplos de código y la guía de programación. Sigue las instrucciones cuidadosamente para entender y personalizar el código según los requisitos de tu proyecto.
+1. Abre el archivo `cansat.ino` en el Arduino IDE.
+2. Selecciona la placa y el puerto correcto.
+3. Verifica el código y luego súbelo al CanSat.
 
 ## Configuración de Sensores y Módulos
 
-Esta sección proporciona instrucciones para configurar y calibrar los sensores incluidos en el kit, así como para integrar los módulos de comunicación y almacenamiento de datos.
+### Calibración de Sensores
+
+Sigue las instrucciones de cada sensor para calibrarlo correctamente. Los sensores incluidos pueden ser el IMU, GPS, y sensores de presión.
+
+### Integración de Módulos
+
+Configura los módulos de comunicación y almacenamiento de datos, como la tarjeta SD y el módulo RF, siguiendo los pasos indicados en la documentación técnica.
 
 ## Uso y Operación
 
-Esta sección proporciona instrucciones para el uso del CanSat antes, durante y después de la misión, así como pautas para la recolección y análisis de datos.
+### Antes de la Misión
+
+Revisa el estado de la batería, las conexiones, y asegúrate de que los sensores estén bien calibrados.
+
+### Durante la Misión
+
+Monitorea los datos en tiempo real a través de la **GUI** incluida. Sigue las instrucciones para ver los datos enviados por el CanSat.
+
+### Después de la Misión
+
+Analiza los datos recolectados y compáralos con los objetivos de la misión. Utiliza las herramientas de análisis provistas en el repositorio para procesar los datos.
 
 ## Resolución de Problemas
 
-Esta sección proporciona una lista de problemas comunes que puedes encontrar al utilizar el CanSat y posibles soluciones para resolverlos.
+Esta sección cubre problemas comunes como:
+
+- **El CanSat no enciende:** Verifica las conexiones y la carga de la batería.
+- **Problemas con la programación:** Asegúrate de que el código esté compilado correctamente y la placa esté seleccionada en el IDE.
 
 ## Recursos Adicionales
 
-Esta sección proporciona una lista de recursos adicionales que pueden ser útiles para comprender mejor y trabajar con el kit CanSat.
-
----
+Para más información, consulta los recursos adicionales en las carpetas `tutorials` y `docs`, donde encontrarás tutoriales detallados y documentación técnica para profundizar en el uso del CanSat.
 
