@@ -166,6 +166,7 @@ Además del hardware, necesitarás el siguiente software:
    - Navega a la carpeta `cansat_gui_3.0` dentro del repositorio.
    - Después de instalar las dependencias con `pip`, puedes ejecutar la GUI abriendo el archivo Python correspondiente (`main.py`).
    - La GUI te permitirá visualizar y controlar los datos que el CanSat recoja en tiempo real.
+   - Aqui puede encontrar un tutorial detallado de la insatalacion de la interfaz grafica: https://drive.google.com/file/d/182uIa4mScQuNg7ySqFOvQKNl8Lw1lH_b/view?usp=drive_link
 
 5. **Controlador CH340**:
    - El controlador **CH340** es necesario para la comunicación entre el CanSat y tu computadora. Los archivos del controlador están incluidos en la carpeta `Cansat_arduino`.
