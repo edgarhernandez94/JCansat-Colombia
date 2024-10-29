@@ -15,10 +15,15 @@ import random  # Importación para generar datos aleatorios
 # Funciones auxiliares
 # -------------------------------------------------------------------------------
 
-def ajustar_a_resolucion(x, y, width, height, target_res, current_res):
+def ajustar_a_resolucion(x, y, width, height, target_res, current_res, min_width=80, min_height=30):
     prop_x = current_res[0] / target_res[0]
     prop_y = current_res[1] / target_res[1]
-    return int(x * prop_x), int(y * prop_y), int(width * prop_x), int(height * prop_y)
+    x_adj = int(x * prop_x)
+    y_adj = int(y * prop_y)
+    width_adj = max(int(width * prop_x), min_width)  # Establece un ancho mínimo
+    height_adj = max(int(height * prop_y), min_height)  # Establece un alto mínimo
+    return x_adj, y_adj, width_adj, height_adj
+
 
 def cerrar(event):
     root.destroy()
@@ -327,9 +332,7 @@ style.configure('TButton', padding=5, relief='flat', background='#0078d7', foreg
 # -------------------------------------------------------------------------------
 # Configuración del cuadro de puertos COM
 # -------------------------------------------------------------------------------
-# Crear el Label para "CONEXIÓN" con estilos mejorados
-label_conexion = tk.Label(root, text="CONEXIÓN", bg="#0078d7", fg="white", font=("Helvetica", 12, "bold"), anchor="center")
-label_conexion.place(x=1450, y=200, width=100, height=30)
+
 # Crear el Label para mostrar el Temperatura
 label_dato_11 = tk.Label(root, text="", font=("Helvetica", 24, "bold"), bg="#ffffff")
 label_dato_11.place(x=235, y=500)
@@ -342,25 +345,60 @@ label_dato_12.place(x=235, y=920)
 # # Crear el Label para mostrar el Battery
 label_dato_15 = tk.Label(root, text="", font=("Helvetica", 24, "bold"), bg="#ffffff")
 label_dato_15.place(x=230, y=1130)  # Ajusta la posición según sea necesario
+###################FRAMA##############
+# Configuración del Frame para el área de control
+pos_x_frame, pos_y_frame, width_frame, height_frame = ajustar_a_resolucion(
+    1800, 210, 900, 330, resolucion_4k, resolucion_actual
+)
 
-# Crear el Combobox para los puertos COM
-combobox_puertos = ttk.Combobox(root, style='TCombobox')
-combobox_puertos.place(x=1550, y=200, width=200, height=30)
+# Crear el Frame que contiene los botones y el combobox
+control_frame = tk.Frame(root, bg="#e0e0e0", relief="ridge", bd=2)
+control_frame.place(x=pos_x_frame, y=pos_y_frame, width=width_frame, height=height_frame)
 
-# Botón para actualizar la lista de puertos COM
-btn_actualizar = ttk.Button(root, text="Actualizar", style='TButton', command=actualizar_puertos)
-btn_actualizar.place(x=1760, y=200, width=100, height=30)
+# Ajusta las posiciones y tamaños relativos dentro del Frame
+# Calculando con tamaños mínimos para garantizar la visibilidad en todas las resoluciones
 
-# Botón para conectar al puerto COM seleccionado
-btn_conectar = ttk.Button(root, text="Conectar", style='TButton', command=conectar)
-btn_conectar.place(x=1760, y=240, width=100, height=30)
+# Label para "CONEXIÓN" dentro del Frame
+label_x, label_y, label_width, label_height = ajustar_a_resolucion(
+    width_frame * 0.02, height_frame * 0.1, width_frame * 0.14, height_frame * 0.3, resolucion_4k, resolucion_actual
+)
+label_conexion = tk.Label(control_frame, text="CONEXIÓN", bg="#0078d7", fg="white", font=("Helvetica", 10, "bold"), anchor="center")
+label_conexion.place(x=label_x, y=label_y, width=label_width, height=label_height)
 
-# Crear el botón para iniciar la simulación
-btn_simulacion = ttk.Button(root, text="Iniciar Simulación", style='TButton', command=iniciar_simulacion)
-btn_simulacion.place(x=1560, y=240, width=150, height=30)
+# Combobox para los puertos COM dentro del Frame
+combobox_x, combobox_y, combobox_width, combobox_height = ajustar_a_resolucion(
+    width_frame * 0.75, height_frame * 0.1, width_frame * 0.28, height_frame * 0.3, resolucion_4k, resolucion_actual
+)
+combobox_puertos = ttk.Combobox(control_frame, style='TCombobox')
+combobox_puertos.place(x=combobox_x, y=combobox_y, width=combobox_width, height=combobox_height)
 
-# Inicializar la lista de puertos COM
+# Botón "Actualizar" dentro del Frame
+actualizar_x, actualizar_y, actualizar_width, actualizar_height = ajustar_a_resolucion(
+    width_frame * 1.37, height_frame * 0.1, width_frame * 0.14, height_frame * 0.3, resolucion_4k, resolucion_actual
+)
+btn_actualizar = ttk.Button(control_frame, text="Actualizar", style='TButton', command=actualizar_puertos)
+btn_actualizar.place(x=actualizar_x, y=actualizar_y, width=actualizar_width, height=actualizar_height)
+
+# Botón "Conectar" dentro del Frame
+conectar_x, conectar_y, conectar_width, conectar_height = ajustar_a_resolucion(
+    width_frame * 1.37, height_frame * 1, width_frame * 0.14, height_frame * 0.3, resolucion_4k, resolucion_actual
+)
+btn_conectar = ttk.Button(control_frame, text="Conectar", style='TButton', command=conectar)
+btn_conectar.place(x=conectar_x, y=conectar_y, width=conectar_width, height=conectar_height)
+
+# Botón "Simulación" dentro del Frame
+simulacion_x, simulacion_y, simulacion_width, simulacion_height = ajustar_a_resolucion(
+    width_frame * 0.75, height_frame * 1, width_frame * 0.28, height_frame * 0.3, resolucion_4k, resolucion_actual
+)
+btn_simulacion = ttk.Button(control_frame, text="Simulación", style='TButton', command=iniciar_simulacion)
+btn_simulacion.place(x=simulacion_x, y=simulacion_y, width=simulacion_width, height=simulacion_height)
+
+# Inicializar la lista de puertos COM al inicio
 actualizar_puertos()
+
+
+
+
 
 # -------------------------------------------------------------------------------
 # Configuración del widget del mapa
